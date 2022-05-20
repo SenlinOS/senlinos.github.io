@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on SENLINOS ON THE WEB</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jun 2020 20:05:55 +0800</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的新项目 SLOS-GIMPainter 发布</title>
+      <link>/post/slos-gimpainter-released/</link>
+      <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
+      
+      <guid>/post/slos-gimpainter-released/</guid>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2022-04-29 更新： 改进工具预设：04</description>
+    </item>
+    
+    <item>
+      <title>在GNU/Linux中修改T9键盘映射</title>
+      <link>/post/modify-delux-t9-keyboard-mapping/</link>
+      <pubDate>Thu, 29 Nov 2018 00:38:43 +0800</pubDate>
+      
+      <guid>/post/modify-delux-t9-keyboard-mapping/</guid>
+      <description>2021-05-24 更新，删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。 新方法是只改变指定硬件的键位，也就是只改</description>
+    </item>
+    
+    <item>
+      <title>GNU/Linux中驱动 Epson 2480 扫描仪</title>
+      <link>/post/epson2480-scanner-on-linux/</link>
+      <pubDate>Wed, 27 Apr 2022 07:06:57 +0800</pubDate>
+      
+      <guid>/post/epson2480-scanner-on-linux/</guid>
+      <description>这篇日志是2013年发表在我的网易博客上 (原始的网易博客已经停止运营)。 我最近又开始使用扫描仪，所以把这篇驱动日志重新整理后再发表出来。 现在</description>
+    </item>
+    
+    <item>
+      <title>设置软件窗口半透明后描图 &amp; 键盘音效</title>
+      <link>/post/transset-and-keysound/</link>
+      <pubDate>Thu, 03 Feb 2022 09:44:20 +0800</pubDate>
+      
+      <guid>/post/transset-and-keysound/</guid>
+      <description>设置软件窗口半透明后描图 原创教程 我的参考资料很多都整理为PDF、CBZ类型的文档，如果需要时每次都要把文档中的单张图片提取出来，然后导入绘画</description>
+    </item>
+    
+    <item>
+      <title>Zim 层叠式大纲-反向链接笔记</title>
+      <link>/post/zim-backlinks-notes/</link>
+      <pubDate>Sat, 01 Jan 2022 10:36:29 +0800</pubDate>
+      
+      <guid>/post/zim-backlinks-notes/</guid>
+      <description>在学习新知识时，看的时候感觉自己学会了，但过段时间却把知识点都忘记了！ 所以当时把知识点记录下来会方便以后复习。我找了一些笔记软件，很多都是用</description>
+    </item>
+    
+    <item>
+      <title>Ibus输入法托盘EN颜色，USB扩展坞等</title>
+      <link>/post/ibus-input-method-tray-color/</link>
+      <pubDate>Sat, 20 Nov 2021 20:23:52 +0800</pubDate>
+      
+      <guid>/post/ibus-input-method-tray-color/</guid>
+      <description>Ibus输入法 在GNU/Linux系统中，我一直使用Fcitx中文输入法，不过前段时间在输入中文标点时开始变得混乱，因为我当时急需使用，所以</description>
+    </item>
+    
+    <item>
+      <title>使用铁锯给老笔记本电脑添加内存 ;)</title>
+      <link>/post/add-memory-with-iron-saw/</link>
+      <pubDate>Wed, 06 Oct 2021 10:38:55 +0800</pubDate>
+      
+      <guid>/post/add-memory-with-iron-saw/</guid>
+      <description>我的老笔记本电脑内存只有4G，使用的系统是 Xubuntu GNU/Linux，运行的非常流畅，但使用GIMP编辑大文件时几乎将4G内存占满 (这时系统会去使</description>
+    </item>
+    
+    <item>
+      <title>Nvidia-340 驱动与内核不匹配，降级内核解决</title>
+      <link>/post/downgrade-ubuntu-linux-kernel/</link>
+      <pubDate>Mon, 04 Oct 2021 19:23:22 +0800</pubDate>
+      
+      <guid>/post/downgrade-ubuntu-linux-kernel/</guid>
+      <description>我的老电脑使用的是显卡是 Nvidia GT240，在 Xubuntu 中使用的显卡驱动是：Nvidia-340。 但在 Xubuntu 20.04 升级到 5.11 内核后，Nvidia-340驱动与新内核</description>
+    </item>
+    
+    <item>
+      <title>在 GIMP 中手动保存临时预设</title>
+      <link>/post/manually-save-temporary-presets/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/manually-save-temporary-presets/</guid>
+      <description>Manually save temporary presets in GIMP, English “ 如果 GIMP 可以临时保存画笔尺寸就好了！” 这是我想要的一个功能，但 GIMP 似乎没有这个功能！ 不过今天我偶然发现了这个特性：在 GIMP 中手动保存</description>
+    </item>
+    
+    <item>
+      <title>提取图片上的文字 &amp; 新的字幕编辑器</title>
+      <link>/post/gimagereader-and-subtitleeditor/</link>
+      <pubDate>Tue, 19 Nov 2019 17:51:44 +0800</pubDate>
+      
+      <guid>/post/gimagereader-and-subtitleeditor/</guid>
+      <description>提取图片上的文字： 2020-06-11 更新，百度翻译已经支持粘贴图片进行翻译。 2021-04-21 更新，搜狗翻译也支持翻译图片中的文字。 在看图片类的复杂外文时，想找个在线图片翻</description>
+    </item>
+    
+    <item>
+      <title>SpyderX on Xubuntu 显示器校色</title>
+      <link>/post/spyderx-on-xubuntu/</link>
+      <pubDate>Sun, 16 Jun 2019 19:01:55 +0800</pubDate>
+      
+      <guid>/post/spyderx-on-xubuntu/</guid>
+      <description>注意：DisplayCAL 只适用于 Xubuntu 18.04 LTS。在 Xubuntu 20.04 LTS 的软件源中已经被移除，即使自行安装也无法检测到校色仪。 前段时间购买了 SpyderX Pro 显示器校色仪。</description>
+    </item>
+    
+    <item>
+      <title>制作了QjoyPad的美观图标</title>
+      <link>/post/beautiful-icon-for-qjoypad/</link>
+      <pubDate>Sat, 27 Apr 2019 13:51:57 +0800</pubDate>
+      
+      <guid>/post/beautiful-icon-for-qjoypad/</guid>
+      <description>我一直使用 T9键盘 进行软件操作，长时间保持一种工作姿势，手指会有些疼！ 所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。 在Xu</description>
+    </item>
+    
+    <item>
+      <title>解决安装单系统Xubuntu时grub安装失败</title>
+      <link>/post/xubuntu-uefi-grub/</link>
+      <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
+      
+      <guid>/post/xubuntu-uefi-grub/</guid>
+      <description>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不使用盗版系统与软件</description>
+    </item>
+    
+    <item>
+      <title>GIMP焦点自动返回到画布窗口</title>
+      <link>/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</link>
+      <pubDate>Sun, 11 Nov 2018 09:25:27 +0800</pubDate>
+      
+      <guid>/post/gimp-the-focus-automatically-returns-to-the-canvas-window/</guid>
+      <description>2019-10-09 更新，原来有四个设置，现在两个设置就可以。 直到 GIMP 2.10.x 单击其他对话框的选项后，画布窗口会失去焦点。 此时按下空格键相关快捷键将不起作用。 解决方案</description>
+    </item>
+    
+    <item>
+      <title>解决打开Chromium需要密码与USB声卡</title>
+      <link>/post/chromium-keyrings-and-usb-soundcard/</link>
+      <pubDate>Tue, 24 Jul 2018 15:32:24 +0800</pubDate>
+      
+      <guid>/post/chromium-keyrings-and-usb-soundcard/</guid>
+      <description>2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</description>
+    </item>
+    
+    <item>
+      <title>MPV 与 Blender视频编辑插件</title>
+      <link>/post/mpv-and-blender-vse-transform-tool/</link>
+      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
+      
+      <guid>/post/mpv-and-blender-vse-transform-tool/</guid>
+      <description>MPV 播放器： 2021-03-06 更新，现在使用的是Celluloid (就是以前的 GNOME-MPV)，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其</description>
+    </item>
+    
+    <item>
+      <title>X(L)ubuntu-18.04、Blender、Mcomix</title>
+      <link>/post/lubuntu-18-04-blender-mcomix/</link>
+      <pubDate>Sat, 12 May 2018 17:54:16 +0800</pubDate>
+      
+      <guid>/post/lubuntu-18-04-blender-mcomix/</guid>
+      <description>2018-05-16 更新系统到 Xubuntu 18.04 考虑到以后 Lubuntu 系统会转到 QT 版本，但我比较喜欢使用 GTK 的程序， 所以决定还是转到 Xubuntu，安装 新立得软件包管理器(Synapt</description>
+    </item>
+    
+    <item>
+      <title>MyPaint-Brushes for GIMP 2.10</title>
+      <link>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</link>
+      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      
+      <guid>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</guid>
+      <description>GIMP 2.10 发布，添加了数不清的新功能。 其中的一个功能是 GIMP 可以使用 MyPaint 的画笔，但我感觉载入的默认画笔的图标与顺序有些混乱。 所以我制作了 36个 MyPaint 画笔，这</description>
+    </item>
+    
+    <item>
+      <title>Xubuntu系统中设置Wacom CTL-671</title>
+      <link>/post/linuxwacom-ctl671-settings/</link>
+      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
+      
+      <guid>/post/linuxwacom-ctl671-settings/</guid>
+      <description>2021-09-20 更新，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统中已经默认安装了Wacom驱动：xserv</description>
+    </item>
+    
+    <item>
+      <title>关于 AzPainter 翻译文件</title>
+      <link>/post/azpainter-and-my-git-warehouse/</link>
+      <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
+      
+      <guid>/post/azpainter-and-my-git-warehouse/</guid>
+      <description>2021-10-12 更新，软件作者已经把 AzPainter 的源代码放到了他的GitLab上。 地址：https://gitlab.com/azelpg/azpainter 注意：</description>
+    </item>
+    
+    <item>
+      <title>AzPainter 2.1.1 for Linux 的色环面板解析</title>
+      <link>/post/azpainter-for-linux-colorwheel-analysis/</link>
+      <pubDate>Wed, 18 Oct 2017 00:19:44 +0800</pubDate>
+      
+      <guid>/post/azpainter-for-linux-colorwheel-analysis/</guid>
+      <description>AzPainter 2.1.1 for Linux 加入了 HLS 颜色滑片，它与色环面板可以密切配合！ HLS 滑片的颜色走势符合绘画的色彩原理，可以使用它来观察色环面板。 AzPainter 色环上的冷色与暖色： 如图</description>
+    </item>
+    
+    <item>
+      <title>翻译了 AzPainter 2 for Linux 的简体中文界面</title>
+      <link>/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</link>
+      <pubDate>Mon, 24 Apr 2017 21:14:34 +0800</pubDate>
+      
+      <guid>/post/translated-chinese-simplified-interface-for-azpainter-2-linux/</guid>
+      <description>AzPainter 2 for Linux 已经发布有些时间了，我一直在等待中文界面，但原来的翻译者似乎是终止翻译了！ 所以我决定翻译 AzPainter 2.x for Linux 的简体中文界面。 AzPainter 2 for Linux 默认是一体窗</description>
+    </item>
+    
+  </channel>
+</rss>

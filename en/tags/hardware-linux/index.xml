@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware Linux on SENLINOS ON THE WEB</title>
+    <link>/en/tags/hardware-linux/</link>
+    <description>Recent content in Hardware Linux on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2018 00:38:43 +0800</lastBuildDate>
+    
+	<atom:link href="/en/tags/hardware-linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在GNU/Linux中修改T9键盘映射</title>
+      <link>/en/post/modify-delux-t9-keyboard-mapping/</link>
+      <pubDate>Thu, 29 Nov 2018 00:38:43 +0800</pubDate>
+      
+      <guid>/en/post/modify-delux-t9-keyboard-mapping/</guid>
+      <description>2021-05-24 更新，删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。 新方法是只改变指定硬件的键位，也就是只改</description>
+    </item>
+    
+    <item>
+      <title>GNU/Linux中驱动 Epson 2480 扫描仪</title>
+      <link>/en/post/epson2480-scanner-on-linux/</link>
+      <pubDate>Wed, 27 Apr 2022 07:06:57 +0800</pubDate>
+      
+      <guid>/en/post/epson2480-scanner-on-linux/</guid>
+      <description>这篇日志是2013年发表在我的网易博客上 (原始的网易博客已经停止运营)。 我最近又开始使用扫描仪，所以把这篇驱动日志重新整理后再发表出来。 现在</description>
+    </item>
+    
+    <item>
+      <title>使用铁锯给老笔记本电脑添加内存 ;)</title>
+      <link>/en/post/add-memory-with-iron-saw/</link>
+      <pubDate>Wed, 06 Oct 2021 10:38:55 +0800</pubDate>
+      
+      <guid>/en/post/add-memory-with-iron-saw/</guid>
+      <description>我的老笔记本电脑内存只有4G，使用的系统是 Xubuntu GNU/Linux，运行的非常流畅，但使用GIMP编辑大文件时几乎将4G内存占满 (这时系统会去使</description>
+    </item>
+    
+    <item>
+      <title>SpyderX on Xubuntu 显示器校色</title>
+      <link>/en/post/spyderx-on-xubuntu/</link>
+      <pubDate>Sun, 16 Jun 2019 19:01:55 +0800</pubDate>
+      
+      <guid>/en/post/spyderx-on-xubuntu/</guid>
+      <description>注意：DisplayCAL 只适用于 Xubuntu 18.04 LTS。在 Xubuntu 20.04 LTS 的软件源中已经被移除，即使自行安装也无法检测到校色仪。 前段时间购买了 SpyderX Pro 显示器校色仪。</description>
+    </item>
+    
+    <item>
+      <title>解决打开Chromium需要密码与USB声卡</title>
+      <link>/en/post/chromium-keyrings-and-usb-soundcard/</link>
+      <pubDate>Tue, 24 Jul 2018 15:32:24 +0800</pubDate>
+      
+      <guid>/en/post/chromium-keyrings-and-usb-soundcard/</guid>
+      <description>2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</description>
+    </item>
+    
+    <item>
+      <title>Xubuntu系统中设置Wacom CTL-671</title>
+      <link>/en/post/linuxwacom-ctl671-settings/</link>
+      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
+      
+      <guid>/en/post/linuxwacom-ctl671-settings/</guid>
+      <description>2021-09-20 更新，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统中已经默认安装了Wacom驱动：xserv</description>
+    </item>
+    
+  </channel>
+</rss>

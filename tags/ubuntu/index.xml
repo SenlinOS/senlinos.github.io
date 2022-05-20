@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on SENLINOS ON THE WEB</title>
+    <link>/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Oct 2021 19:23:22 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nvidia-340 驱动与内核不匹配，降级内核解决</title>
+      <link>/post/downgrade-ubuntu-linux-kernel/</link>
+      <pubDate>Mon, 04 Oct 2021 19:23:22 +0800</pubDate>
+      
+      <guid>/post/downgrade-ubuntu-linux-kernel/</guid>
+      <description>我的老电脑使用的是显卡是 Nvidia GT240，在 Xubuntu 中使用的显卡驱动是：Nvidia-340。 但在 Xubuntu 20.04 升级到 5.11 内核后，Nvidia-340驱动与新内核</description>
+    </item>
+    
+    <item>
+      <title>解决安装单系统Xubuntu时grub安装失败</title>
+      <link>/post/xubuntu-uefi-grub/</link>
+      <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
+      
+      <guid>/post/xubuntu-uefi-grub/</guid>
+      <description>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不使用盗版系统与软件</description>
+    </item>
+    
+    <item>
+      <title>X(L)ubuntu-18.04、Blender、Mcomix</title>
+      <link>/post/lubuntu-18-04-blender-mcomix/</link>
+      <pubDate>Sat, 12 May 2018 17:54:16 +0800</pubDate>
+      
+      <guid>/post/lubuntu-18-04-blender-mcomix/</guid>
+      <description>2018-05-16 更新系统到 Xubuntu 18.04 考虑到以后 Lubuntu 系统会转到 QT 版本，但我比较喜欢使用 GTK 的程序， 所以决定还是转到 Xubuntu，安装 新立得软件包管理器(Synapt</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brushes on SENLINOS ON THE WEB</title>
+    <link>/en/tags/brushes/</link>
+    <description>Recent content in Brushes on SENLINOS ON THE WEB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jun 2020 20:05:55 +0800</lastBuildDate>
+    
+	<atom:link href="/en/tags/brushes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的新项目 SLOS-GIMPainter 发布</title>
+      <link>/en/post/slos-gimpainter-released/</link>
+      <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
+      
+      <guid>/en/post/slos-gimpainter-released/</guid>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2022-04-29 更新： 改进工具预设：04</description>
+    </item>
+    
+    <item>
+      <title>在 GIMP 中手动保存临时预设</title>
+      <link>/en/post/manually-save-temporary-presets/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/manually-save-temporary-presets/</guid>
+      <description>Manually save temporary presets in GIMP, English “ 如果 GIMP 可以临时保存画笔尺寸就好了！” 这是我想要的一个功能，但 GIMP 似乎没有这个功能！ 不过今天我偶然发现了这个特性：在 GIMP 中手动保存</description>
+    </item>
+    
+    <item>
+      <title>MyPaint-Brushes for GIMP 2.10</title>
+      <link>/en/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</link>
+      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      
+      <guid>/en/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</guid>
+      <description>GIMP 2.10 发布，添加了数不清的新功能。 其中的一个功能是 GIMP 可以使用 MyPaint 的画笔，但我感觉载入的默认画笔的图标与顺序有些混乱。 所以我制作了 36个 MyPaint 画笔，这</description>
+    </item>
+    
+  </channel>
+</rss>
