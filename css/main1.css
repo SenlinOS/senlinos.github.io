@@ -1291,6 +1291,17 @@ button .main-nav__btn-box:hover{
 	margin-top: 1.5em;
 }
 
+#rcomm1 {
+	width: 100%;
+	padding: 16px 16px;
+	color: #D1D1D1;
+	text-align: left;
+	background-color: #120B24;
+	margin: 0 auto;
+	border-bottom: 1px solid #3798FB;
+	border-radius: 0.1em;
+}
+
 .combtn {
 	background-color: #372D52;
 	border-radius: 3px;
