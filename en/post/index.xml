@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>MPV 与 Blender视频编辑插件</title>
+      <link>/en/post/mpv-and-blender-vse-transform-tool/</link>
+      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
+      
+      <guid>/en/post/mpv-and-blender-vse-transform-tool/</guid>
+      <description>MPV 播放器： 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其界面非常简洁，在窗口内拖动就可以移动窗口 （鼠标放在窗口上侧不显示进度条，鼠标放在窗口下</description>
+    </item>
+    
+    <item>
       <title>GNU/Linux中驱动 Epson 2480 扫描仪</title>
       <link>/en/post/epson2480-scanner-on-linux/</link>
       <pubDate>Wed, 27 Apr 2022 07:06:57 +0800</pubDate>
@@ -144,15 +153,6 @@
       
       <guid>/en/post/chromium-keyrings-and-usb-soundcard/</guid>
       <description>2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</description>
-    </item>
-    
-    <item>
-      <title>MPV 与 Blender视频编辑插件</title>
-      <link>/en/post/mpv-and-blender-vse-transform-tool/</link>
-      <pubDate>Thu, 31 May 2018 12:45:35 +0800</pubDate>
-      
-      <guid>/en/post/mpv-and-blender-vse-transform-tool/</guid>
-      <description>MPV 播放器： 2021-03-06 更新，现在使用的是Celluloid (就是以前的 GNOME-MPV)，操作是一样的。 在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV， 其</description>
     </item>
     
     <item>

@@ -91,8 +91,6 @@
 				<center><h1 class="entry__title title-bottom">MPV 与 Blender视频编辑插件</h1></center>
 				<div class="entry__content"><p><strong>MPV 播放器：</strong></p>
 
-<p><mark>2021-03-06 更新，现在使用的是Celluloid (就是以前的 GNOME-MPV)，操作是一样的。</mark></p>
-
 <p>在 GNU/Linux 系统中我最喜欢的影音播放器就是 MPV，
 其界面非常简洁，在窗口内拖动就可以移动窗口
 （鼠标放在窗口上侧不显示进度条，鼠标放在窗口下侧会显示进度条）</p>
@@ -154,8 +152,22 @@
 <td align="left">隐藏/显示字幕</td>
 <td align="left">v</td>
 </tr>
+
+<tr>
+<td align="left">显示进度条</td>
+<td align="left">o</td>
+</tr>
 </tbody>
 </table>
+
+<p>在 <code>~/.config/mpv/</code> 目录建立文件：<code>input.conf</code>
+<br />在文件 <strong>input.conf</strong> 中填写缩放字幕字体尺寸设置：</p>
+
+<pre><code>b add sub-scale -0.05	# 减小字幕字体尺寸
+n add sub-scale +0.05	# 增加字幕字体尺寸
+</code></pre>
+
+<p>现在按 <kbd>b</kbd>键可以减小字幕尺寸；按 <kbd>n</kbd>键可以增加字幕尺寸</p>
 
 <hr />
 
@@ -290,16 +302,16 @@
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/en/post/chromium-keyrings-and-usb-soundcard/">
+              <a href="/en/post/modify-delux-t9-keyboard-mapping/">
                 <span class="button__icon">⬅</span>
-                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
+                <span class="button__text">在GNU/Linux中修改T9键盘映射</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/en/post/lubuntu-18-04-blender-mcomix/">
-                <span class="button__text">X(L)ubuntu-18.04、Blender、Mcomix</span>
+              <a href="/en/post/epson2480-scanner-on-linux/">
+                <span class="button__text">GNU/Linux中驱动 Epson 2480 扫描仪</span>
                 <span class="button__icon">➡</span>
               </a>
             </span>
