@@ -1307,6 +1307,12 @@ button .main-nav__btn-box:hover{
 	border-radius: 3px;
 }
 
+@media screen and (max-width: 720px) {
+	.combtn {
+		width: 100%;
+		}
+}
+
 .wlogo {
 	width: 20px;
 	height: 20px;
