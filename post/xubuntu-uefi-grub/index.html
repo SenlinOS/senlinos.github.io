@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>解决安装单系统Xubuntu时grub安装失败 | SENLINOS ON THE WEB</title>
+	<title>解决安装GNU/Linux系统时GRUB安装失败 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux">
+	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
 	<link rel="stylesheet" href="/css/float.css">
 	<link rel="stylesheet" href="/css/fancybox.css">
@@ -95,8 +95,20 @@
 	<div class="entry__meta meta mb">
 	<time class="entry__meta-published meta-published" datetime="2019-03-19T16:19:16&#43;08:00">2019-03-19</time>
 	</div>
-				<center><h1 class="entry__title title-bottom">解决安装单系统Xubuntu时grub安装失败</h1></center>
-				<div class="entry__content"><p><mark>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。</mark></p>
+				<center><h1 class="entry__title title-bottom">解决安装GNU/Linux系统时GRUB安装失败</h1></center>
+				<div class="entry__content">
+
+<p><mark>2022-11-05 更新</mark>，我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的<code>EFI系统分区</code>即可解决问题。
+但今天重装系统时再次出现“GRUB安装失败”，可明明之前安装时可以通过啊！我哪里操作错误了吗？</p>
+
+<p>而且这种失败会在系统安装到99%的时候出现，非常令人沮丧:/ 不过还好:) 我搜索到了最简单有效的解决方法：</p>
+
+<ul>
+<li><strong><code>/根分区</code></strong>与<strong><code>EFI分区</code></strong>重新创建时一定要选择使用<strong><code>主分区/Primary</code></strong>。
+<br />（不要使用<del>逻辑分区/Logical</del>）</li>
+</ul>
+
+<p><mark>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。</mark></p>
 
 <p>我一直贯彻“<code>不使用盗版系统与软件来创作自己的CG作品</code>”，
 但彻底抛弃盗版是个循序渐进的过程，我不能一下就抛弃掉盗版的Win7,
@@ -110,7 +122,9 @@
 所以我决定把Xubuntu变成电脑中的唯一操作系统，
 <code>是时候抛弃掉盗版系统了</code> O(^o^)O</p>
 
-<p><strong>遇到grub安装失败，系统无法引导</strong></p>
+<hr />
+
+<h4 id="grub安装失败-系统无法引导">GRUB安装失败，系统无法引导</h4>
 
 <p>我在给笔记本电脑安装单系统Xubuntu时也遇到这个问题，在第二次重安装时连接了网络，
 幸运的安装系统成功了！所以我也没在意这个问题。</p>
@@ -121,19 +135,29 @@
 
 <p><img src="/img/xubuntu-efi.jpg"/></p>
 
-<p>图中A，我看网络上大家在制作系统安装盘时用到各种启动盘软件，
-其实Ubuntu中的<code>启动盘创建器</code>是最好用的，简单方便的就可以制作出<code>Live-系统U盘</code>。</p>
+<ul>
+<li>图中A，我看网络上大家在制作系统安装盘时用到各种启动盘软件，
+其实Ubuntu中的<code>启动盘创建器</code>是最好用的，简单方便的就可以制作出<code>Live-系统U盘</code>。</li>
+</ul>
 
-<p>图中B，电脑设置开机从U盘启动后，会看到<code>文字列表式的开机画面</code>,说明这是<code>UEFI启动模式</code>。
-所以UEFI启动模式就要对应<code>EFI系统分区</code>。</p>
+<p><p></p>
 
-<p>图中1，这里是解决问题的关键，一定要新建300m<code>EFI系统分区</code>，在“用于”的下拉菜单中就可以直接选择，如<code>图中2</code>所示。</p>
+<ul>
+<li>图中B，电脑设置开机从U盘启动后，会看到<code>文字列表式的开机画面</code>,说明这是<code>UEFI启动模式</code>。
+所以UEFI启动模式就要对应<code>EFI系统分区</code>。</li>
+</ul>
 
-<p>我依次创建的分区是：EFI系统分区、/分区、Home分区。<code>EFI系统分区一定要最先创建</code>。</p>
+<p><p></p>
+
+<ul>
+<li>图中1，这里是解决问题的关键，一定要新建300MB的<code>EFI系统分区</code>，在“用于”的下拉菜单中就可以直接选择，如<code>图中2</code>所示。</li>
+</ul>
+
+<p>我依次创建的分区是：EFI系统分区、/根分区、Home分区。<code>EFI系统分区一定要最先创建</code>。</p>
 
 <p>然后一路根据系统提示，Xubuntu系统就会顺利的安装成功。
 <br/>初建分区时系统会自动格式化，这些截图是我再次启动U盘时拍照的，所以已经显示有系统了！<code>EFI分区</code>的文件系统会自动使用fat32，不需要自己去设置。
-<br/><code>/分区</code>与<code>Home分区</code>的文件系统我习惯使用Ext3。</p>
+<br/><code>/根分区</code>文件系统可以使用Ext4。<code>Home分区</code>的文件系统我习惯使用Ext3。</p>
 
 <p><strong>现在，不使用盗版系统与软件，我已经完全做到了～万岁！！！</strong>
 <br/>Xubuntu～万岁！！！GNU/Linux～万岁！！！</p>
@@ -214,7 +238,7 @@
 			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path
  d="m 126.0641,106.44251 c -2.7343,0.14062 -4.06244,0.56249 -4.06244,0.56249 -13.99967,34.9991 -5.99988,60.99931 -2.99996,66.99917 -15.99959,17.99956 -25.999682,40.99986 -25.999682,68.99915 0,97.99755 58.999982,119.99858 115.998572,125.99844 -6.99983,6.99982 -13.99985,18.00001 -15.99981,34.99957 -14.99962,5.99985 -51.99963,16.99929 -73.99908,-21.99972 0,0 -14.00016,-23.99975 -39.999512,-25.99968 0,0 -24.99939,2e-4 -0.99999,15.99979 0,0 15.99996,7.00031 27.999652,36.99955 0,0 15.00072,43.99925 85.99895,27.99965 l 0.43743,48.21816 c -0.78878,12.49227 -6.96077,20.1301 -19.56219,26.78092 h 166.18544 c -12.59029,-6.64495 -18.76461,-14.27701 -19.56225,-26.74968 l 0.032,-0.032 0.0944,-12.18735 0.18752,-20.93725 h -0.0624 l 0.24847,-35.09256 c 0,-23.9994 -8.00003,-39.9996 -17.99978,-47.99941 56.99858,-5.99986 116.99856,-28.00089 116.99856,-125.99844 0,-27.99929 -10.00006,-50.99959 -25.99968,-68.99915 2.99992,-5.99985 10.9997,-32.00007 -2.99996,-66.99917 0,0 -21.00037,-6.99949 -69.99914,25.99968 -41.99897,-11.99969 -85.99947,-11.99969 -127.99842,0 -36.74909,-24.74937 -57.73376,-26.98402 -65.93669,-26.56217 z"/></svg>
 		</a>
-		<a class="social__link" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCq-8i4aGvQ5-mCq8wyByzmQ" title="YouTube" target="_blank">
+		<a class="social__link" rel="noopener noreferrer" href="https://www.youtube.com/@SenlinOS" title="YouTube" target="_blank">
 			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path
      d="m 126.62325,120.21904 c -31.541334,0 -56.9383,25.39697 -56.9383,56.9383 v 194.97143 c 0,31.5413 25.396966,56.93827 56.9383,56.93827 H 385.3768 c 31.54131,0 56.93825,-25.39697 56.93825,-56.93827 V 177.15734 c 0,-31.54133 -25.39694,-56.9383 -56.93825,-56.9383 z m 76.71979,93.6263 52.65699,30.37539 52.65698,30.40669 -52.65698,30.40665 -52.65699,30.40669 v -60.81334 z"/></svg>
 		</a>

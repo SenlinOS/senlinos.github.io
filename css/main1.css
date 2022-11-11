@@ -1267,6 +1267,24 @@ button .main-nav__btn-box:hover{
 	background: url("/img/tips-img.svg") no-repeat 1em center;
 }
 
+#news {
+	width: 100%;
+	padding: 15px 15px;
+	padding-left: 4em;
+	border: 2px solid #3798FB;
+	border-radius: 0.6em;
+	background-color: #120B24;
+	margin: auto;
+	margin-bottom: 1.2rem;
+	color: #009CFF;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.news-img {
+	background: url("/img/news-img.svg") no-repeat 1em center;
+}
+
 #license {
 	width: 100%;
 	padding: 16px 16px;

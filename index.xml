@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>大家好！我是 森林OS (SenlinOS)。 使用 GNU/Linux 体系制作漫画。 我的项目： SLOS-GIMPainter (画笔包为GIMP)：GitHub 或 爱发电, 微云。 不更新 MyPaintBrushes-GIMP (画笔)</description>
+      <description>大家好！我是 森林OS (SenlinOS)。 使用 GNU/Linux 体系制作漫画。 我的项目： SLOS-GIMPainter (画笔集为GIMP)：GitHub 或 爱发电, 微云。 不更新 MyPaintBrushes-GIMP (画笔)</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Wed, 18 May 2022 20:27:49 +0800</pubDate>
       
       <guid>/manhua/basketball-hometown/</guid>
-      <description>点击上图开始浏览漫画 付费支持漫画 展开查看浏览操作说明 森林OS的漫画专栏 - 第1期 详细专栏内容请观看B站视频：https://www.bilib</description>
+      <description>点击上图开始浏览漫画 我的爱发电➡ 在我的主页浏览漫画的宽度为823px。 在我的爱发电「发电解锁」漫画，可以在爱发电本地观看漫画，并且漫画的宽度</description>
     </item>
     
     <item>
@@ -156,12 +156,12 @@
     </item>
     
     <item>
-      <title>解决安装单系统Xubuntu时grub安装失败</title>
+      <title>解决安装GNU/Linux系统时GRUB安装失败</title>
       <link>/post/xubuntu-uefi-grub/</link>
       <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
       
       <guid>/post/xubuntu-uefi-grub/</guid>
-      <description>2020-11-21 更新，这个只是 Xubuntu 18.04 系统的问题，现在使用 Xubuntu 20.04 不单独划分EFI分区，只使用 /分区、Home分区也可以正常安装。 我一直贯彻“不使用盗版系统与软件</description>
+      <description>2022-11-05 更新，我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的EFI系统分区即可解决问题。 但今天重装系统时</description>
     </item>
     
     <item>
