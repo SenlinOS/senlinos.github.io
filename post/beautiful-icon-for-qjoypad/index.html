@@ -96,7 +96,9 @@
 	<time class="entry__meta-published meta-published" datetime="2019-04-27T13:51:57&#43;08:00">2019-04-27</time>
 	</div>
 				<center><h1 class="entry__title title-bottom">制作了QjoyPad的美观图标</h1></center>
-				<div class="entry__content"><p>我一直使用
+				<div class="entry__content">
+
+<p>我一直使用
 <a target="_blank" rel="nofollow" href="/post/modify-delux-t9-keyboard-mapping/">T9键盘</a>
 进行软件操作，长时间保持一种工作姿势，手指会有些疼！
 <br />所以我想到使用游戏手柄来操作软件，改变手指的操作姿势来缓解疲劳。</p>
@@ -105,34 +107,45 @@
 <br />我已经制作了使用QjoyPad的讲解视频：
 <a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av50561866">&gt; 重重点击</a></p>
 
-<p>并且我制作了QjoyPad的美观图标，以
+<p>视频中演示的是老版本的QjoyPad，设置游戏手柄映射的方法与新版一样。</p>
+
+<p><code>但新版替换图标的方法与之前不同，以下是新版替换图标的方法：</code></p>
+
+<p>我制作的 QjoyPad 的美观图标，以
 <a target="_blank" rel="nofollow" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
 许可发布，大家可以自由使用。
 <br />图标下载 QJoyPad Icon DL:
 <a target="_blank" rel="nofollow" href="https://raw.githubusercontent.com/SenlinOS/databox/master/QJoyPad-icon.zip"><strong>GitHub</strong></a>
 or <a target="_blank" rel="nofollow" href="https://share.weiyun.com/3bYBIRut"><strong>微云</strong></a></p>
 
-<p><mark>2021-04-12 更新：</mark></p>
+<p><mark>2023-04-16 更新：</mark></p>
 
 <p><img src="/img/qjoypad-icon.jpg"/></p>
 
-<p><strong>图标为 QJoyPad 4.3.1 或更高版本：</strong></p>
+<h4 id="图标为-qjoypad-4-3-1-或更高版本">图标为 QJoyPad 4.3.1 或更高版本：</h4>
 
 <ul>
-<li>将你喜欢的一组PNG图像重命名为：<code>qjoypad.png</code>
-<br />橙色或浅色或深色的PNG图像。
-将24或64复制到用户主目录中，并分别重命名。</li>
+<li>将你喜欢的一个PNG图像重命名。
+
+<ul>
+<li>选择橙色或白色或黑色的一个PNG图像</li>
+<li>将其复制到用户主目录中，并重命名为：qjoypad.png</li>
+</ul></li>
 </ul>
 
 <p><p></p>
 
 <ul>
-<li>在终端执行命令 (请对应图标尺寸)：
-<br />sudo cp qjoypad.png /usr/share/icons/hicolor/24x24/apps
-<br />与 sudo cp qjoypad.png /usr/share/icons/hicolor/64x64/apps</li>
+<li>在终端中分别执行以下两条命令：
+
+<ul>
+<li><code>sudo cp qjoypad.png /usr/share/icons/hicolor/24x24/apps</code></li>
+<li><code>sudo cp qjoypad.png /usr/share/icons/hicolor/64x64/apps</code></li>
+</ul></li>
 </ul>
 
-<p>完成后软件图标与系统托盘图标都会一起更新。</p>
+<p>完成后系统菜单图标与系统托盘图标都会一起更新。
+<br />Xfce系统菜单中的 QjoyPad图标也可以使用「菜单编辑器」 <code>Menulibre</code> 这个程序进行编辑。</p>
 </div>
 				
 				<footer class="entry__footer">
@@ -216,7 +229,7 @@ or <a target="_blank" rel="nofollow" href="https://share.weiyun.com/3bYBIRut"><s
 		</a>
 </div>
         <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> & Theme based on <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a></span>
-	<div class="footer__copyright">© 2017-2022 森林OS (SenlinOS) </div>
+	<div class="footer__copyright">© 2017-2023 森林OS (SenlinOS) </div>
 </footer>
 
 <script src="/js/menu.js"></script>
