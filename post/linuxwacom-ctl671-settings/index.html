@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Xubuntu系统中设置Wacom CTL-671 | SENLINOS ON THE WEB</title>
+	<title>XFCE桌面中设置Wacom CTL-671 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
@@ -95,10 +95,12 @@
 	<div class="entry__meta meta mb">
 	<time class="entry__meta-published meta-published" datetime="2018-04-29T00:09:52&#43;08:00">2018-04-29</time>
 	</div>
-				<center><h1 class="entry__title title-bottom">Xubuntu系统中设置Wacom CTL-671</h1></center>
-				<div class="entry__content"><p><mark>2021-09-20 更新</mark>，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。</p>
+				<center><h1 class="entry__title title-bottom">XFCE桌面中设置Wacom CTL-671</h1></center>
+				<div class="entry__content">
 
-<p>在 Xubuntu GNU/Linux 系统中已经默认安装了Wacom驱动：xserver-xorg-input-wacom，所以直接使用脚本就可以。</p>
+<p><mark>2021-09-20 更新</mark>，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。</p>
+
+<p>在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wacom驱动：xserver-xorg-input-wacom，所以直接使用脚本就可以设置。</p>
 
 <p><strong><a id="jump">Wacom CTL-671 板子的sh脚本参数</a>：</strong></p>
 
@@ -173,7 +175,7 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
 <ul>
 <li>如果想将数位板旋转使用，比如左撇子习惯将数位板旋转180度。
 <br />这里我没有使用脚本命令，而是使用Xubuntu系统设置中的<strong>鼠标和触摸板</strong>
-<br />菜单设置管理器 -&gt; 鼠标和触摸板 -&gt; 设备选项卡，设备中选择：<strong>Wacom Bamboo One M Pen stylus</strong>
+<br />菜单设置管理器 -&gt; 鼠标和触摸板 -&gt; 设备选项卡，设备选项中选择：<strong>Wacom Bamboo One M Pen stylus</strong>
 <br />然后选择：<strong>平板</strong> 选项，在 <strong>旋转</strong> 中就可以设置，非常方便。</li>
 </ul>
 
@@ -184,7 +186,22 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
 
 <hr />
 
-<p><strong>Xubuntu系统或Xfce桌面环境中的自启动设置：</strong></p>
+<p><mark>2023-04-22 更新</mark></p>
+
+<p>我有体验使用其他的数位板，再用Wacom CTL-671时感觉有些飘，但我发现还是在<strong>设备选项卡</strong>中设置可以消除这样的感觉。</p>
+
+<ul>
+<li>还是在<strong>「设备」</strong>选项中选择：<strong>Wacom Bamboo One M Pen stylus</strong></li>
+<li>在 <strong>按钮和反馈</strong> 选项卡中，把 <strong>光标速度</strong> 中的<strong>「加速」</strong>与<strong>「灵敏度」</strong>的参数都调到最低</li>
+</ul>
+
+<p><img src="/img/wacomtablet-671.png"/></p>
+
+<p>这样再配合绘画软件中的手抖修正的功能进行线条绘制～手感就会非常好，我使用AzPainter-V3勾线</p>
+
+<hr />
+
+<h4 id="xubuntu系统或xfce桌面环境中的自启动设置">Xubuntu系统或XFCE桌面环境中的自启动设置：</h4>
 
 <ul>
 <li>打开Xfce的设置管理器 -&gt; 会话和启动</li>
@@ -219,16 +236,16 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/post/mypaint-brushes-for-gimp-2.10-by_senlinos/">
+              <a href="/post/modify-delux-t9-keyboard-mapping/">
                 <span class="button__icon">⬅</span>
-                <span class="button__text">MyPaint-Brushes for GIMP 2.10</span>
+                <span class="button__text">在GNU/Linux中修改T9键盘映射</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/post/azpainter-and-my-git-warehouse/">
-                <span class="button__text">关于 AzPainter 翻译文件</span>
+              <a href="/post/epson2480-scanner-on-linux/">
+                <span class="button__text">GNU/Linux中驱动 Epson 2480 扫描仪</span>
                 <span class="button__icon">➡</span>
               </a>
             </span>

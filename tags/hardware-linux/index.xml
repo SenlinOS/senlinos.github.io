@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>XFCE桌面中设置Wacom CTL-671</title>
+      <link>/post/linuxwacom-ctl671-settings/</link>
+      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
+      
+      <guid>/post/linuxwacom-ctl671-settings/</guid>
+      <description>2021-09-20 更新，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
+    </item>
+    
+    <item>
       <title>GNU/Linux中驱动 Epson 2480 扫描仪</title>
       <link>/post/epson2480-scanner-on-linux/</link>
       <pubDate>Wed, 27 Apr 2022 07:06:57 +0800</pubDate>
@@ -54,15 +63,6 @@
       
       <guid>/post/chromium-keyrings-and-usb-soundcard/</guid>
       <description>2021-03-06 更新，现在只使用Firefox火狐浏览器。 火狐中浏览PDF的功能很全面。插件多、安装也方便。 解决打开 Chromium 浏览器需要密码 我使用 Xubuntu 系统时喜欢使用</description>
-    </item>
-    
-    <item>
-      <title>Xubuntu系统中设置Wacom CTL-671</title>
-      <link>/post/linuxwacom-ctl671-settings/</link>
-      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
-      
-      <guid>/post/linuxwacom-ctl671-settings/</guid>
-      <description>2021-09-20 更新，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统中已经默认安装了Wacom驱动：xserv</description>
     </item>
     
   </channel>
