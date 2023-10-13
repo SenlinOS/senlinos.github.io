@@ -26,7 +26,7 @@
       <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
       
       <guid>/post/xubuntu-uefi-grub/</guid>
-      <description>2022-11-05 更新，我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的EFI系统分区即可解决问题。 但今天重装系统时</description>
+      <description>2022-11-05 更新：我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的EFI系统分区即可解决问题。 但今天重装系统时</description>
     </item>
     
     <item>

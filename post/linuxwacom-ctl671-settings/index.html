@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>XFCE桌面中设置Wacom CTL-671 | SENLINOS ON THE WEB</title>
+	<title>LXQT/XFCE桌面中设置Wacom CTL-671 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
@@ -93,10 +93,10 @@
 	<div class="entry__meta meta mb">
 	<time class="entry__meta-published meta-published" datetime="2018-04-29T00:09:52&#43;08:00">2018-04-29</time>
 	</div>
-				<center><h1 class="entry__title title-bottom">XFCE桌面中设置Wacom CTL-671</h1></center>
+				<center><h1 class="entry__title title-bottom">LXQT/XFCE桌面中设置Wacom CTL-671</h1></center>
 				<div class="entry__content">
 
-<p><mark>2021-09-20 更新</mark>，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。</p>
+<p><mark>2021-09-20 更新</mark>：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。</p>
 
 <p>在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wacom驱动：xserver-xorg-input-wacom，所以直接使用脚本就可以设置。</p>
 
@@ -113,6 +113,11 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Area 0 0 21648 12177
 
 xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 3 2
 xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
+</code></pre>
+
+<p><mark>2023-10-13 更新</mark>：我现在使用LXQT桌面环境了，所以「旋转板子180度」需要<a id="RH">添加一行代码</a>：</p>
+
+<pre><code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; rotate half
 </code></pre>
 
 <hr />
@@ -171,7 +176,7 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
 </div><p></p>
 
 <ul>
-<li>如果想将数位板旋转使用，比如左撇子习惯将数位板旋转180度。
+<li>如果想将数位板旋转180度。「LXQT桌面环境需要手动添加一行代码，<a href="#RH">看这里</a>」
 <br />这里我没有使用脚本命令，而是使用Xubuntu系统设置中的<strong>鼠标和触摸板</strong>
 <br />菜单设置管理器 -&gt; 鼠标和触摸板 -&gt; 设备选项卡，设备选项中选择：<strong>Wacom Bamboo One M Pen stylus</strong>
 <br />然后选择：<strong>平板</strong> 选项，在 <strong>旋转</strong> 中就可以设置，非常方便。</li>
@@ -202,7 +207,11 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
 <h4 id="xubuntu系统或xfce桌面环境中的自启动设置">Xubuntu系统或XFCE桌面环境中的自启动设置：</h4>
 
 <ul>
-<li>打开Xfce的设置管理器 -&gt; 会话和启动</li>
+<li>打开Xfce的设置管理器 -&gt; 会话和启动
+
+<ul>
+<li>LXQT桌面环境：首选项 -&gt; LXQt配置中心 -&gt; 会话配置（自动启动），点击「添加」按钮填写名称与.sh文件路径后确定即可。</li>
+</ul></li>
 </ul>
 
 <p><img src="/img/xfce-seting.jpg"/></p>

@@ -17,7 +17,7 @@
       <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
       
       <guid>/post/slos-gimpainter-released/</guid>
-      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2022-04-29 更新： 改进工具预设：04</description>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2022-04-29 更新 改进工具预设：046</description>
     </item>
     
     <item>
@@ -26,16 +26,16 @@
       <pubDate>Thu, 29 Nov 2018 00:38:43 +0800</pubDate>
       
       <guid>/post/modify-delux-t9-keyboard-mapping/</guid>
-      <description>2021-05-24 更新，删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。 新方法是只改变指定硬件的键位，也就是只改</description>
+      <description>2021-05-24 更新：删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。 新方法是只改变指定硬件的键位，也就是只改</description>
     </item>
     
     <item>
-      <title>XFCE桌面中设置Wacom CTL-671</title>
+      <title>LXQT/XFCE桌面中设置Wacom CTL-671</title>
       <link>/post/linuxwacom-ctl671-settings/</link>
       <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
       
       <guid>/post/linuxwacom-ctl671-settings/</guid>
-      <description>2021-09-20 更新，删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
+      <description>2021-09-20 更新：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
     </item>
     
     <item>
@@ -143,7 +143,7 @@
       <pubDate>Tue, 19 Mar 2019 16:19:16 +0800</pubDate>
       
       <guid>/post/xubuntu-uefi-grub/</guid>
-      <description>2022-11-05 更新，我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的EFI系统分区即可解决问题。 但今天重装系统时</description>
+      <description>2022-11-05 更新：我在安装 Trisquel GNU/Linux 10 系统时再次遇到“GRUB安装失败”的问题，解决方法还是创建一个300MB的EFI系统分区即可解决问题。 但今天重装系统时</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@
       <pubDate>Tue, 24 Apr 2018 10:11:47 +0800</pubDate>
       
       <guid>/post/azpainter-and-my-git-warehouse/</guid>
-      <description>2021-10-12 更新，软件作者已经把 AzPainter 的源代码放到了他的GitLab上。 地址：https://gitlab.com/azelpg/azpainter 注意：</description>
+      <description>2021-10-12 更新：软件作者已经把 AzPainter 的源代码放到了他的GitLab上。 地址：https://gitlab.com/azelpg/azpainter 注意：</description>
     </item>
     
     <item>
