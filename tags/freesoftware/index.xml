@@ -6,10 +6,19 @@
     <description>Recent content in Freesoftware on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Feb 2022 09:44:20 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Oct 2023 10:32:28 +0800</lastBuildDate>
     
 	<atom:link href="/tags/freesoftware/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GNU40周年-我与GNU/Linux</title>
+      <link>/post/gnu-40th-anniversary_me-and-gnulinux/</link>
+      <pubDate>Sun, 29 Oct 2023 10:32:28 +0800</pubDate>
+      
+      <guid>/post/gnu-40th-anniversary_me-and-gnulinux/</guid>
+      <description>1983年9月27日，麻省理工学院人工智能实验室的 理查德·斯托曼（Richard Stallman） 在新闻组宣布了雄心勃勃的GNU(Gnu&amp;r</description>
+    </item>
     
     <item>
       <title>设置软件窗口半透明后描图 &amp; 键盘音效</title>
