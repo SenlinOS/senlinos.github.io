@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>LXQT/XFCE桌面中设置Wacom CTL-671</title>
+      <title>Openbox/XFCE桌面中设置Wacom CTL-671</title>
       <link>/post/linuxwacom-ctl671-settings/</link>
       <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
       
@@ -54,6 +54,15 @@
       
       <guid>/about/</guid>
       <description>大家好！我是 森林OS (SenlinOS)。 使用 GNU/Linux 体系制作漫画。 我的项目： SLOS-GIMPainter (画笔集为GIMP)：GitHub 或 爱发电, 微云。 不更新 MyPaintBrushes-GIMP (画笔)</description>
+    </item>
+    
+    <item>
+      <title>GNU40周年-我与GNU/Linux</title>
+      <link>/post/gnu-40th-anniversary_me-and-gnulinux/</link>
+      <pubDate>Sun, 29 Oct 2023 10:32:28 +0800</pubDate>
+      
+      <guid>/post/gnu-40th-anniversary_me-and-gnulinux/</guid>
+      <description>1983年9月27日，麻省理工学院人工智能实验室的 理查德·斯托曼（Richard Stallman） 在新闻组宣布了雄心勃勃的GNU(Gnu&amp;r</description>
     </item>
     
     <item>

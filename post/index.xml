@@ -30,12 +30,21 @@
     </item>
     
     <item>
-      <title>LXQT/XFCE桌面中设置Wacom CTL-671</title>
+      <title>Openbox/XFCE桌面中设置Wacom CTL-671</title>
       <link>/post/linuxwacom-ctl671-settings/</link>
       <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
       
       <guid>/post/linuxwacom-ctl671-settings/</guid>
       <description>2021-09-20 更新：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
+    </item>
+    
+    <item>
+      <title>GNU40周年-我与GNU/Linux</title>
+      <link>/post/gnu-40th-anniversary_me-and-gnulinux/</link>
+      <pubDate>Sun, 29 Oct 2023 10:32:28 +0800</pubDate>
+      
+      <guid>/post/gnu-40th-anniversary_me-and-gnulinux/</guid>
+      <description>1983年9月27日，麻省理工学院人工智能实验室的 理查德·斯托曼（Richard Stallman） 在新闻组宣布了雄心勃勃的GNU(Gnu&amp;r</description>
     </item>
     
     <item>

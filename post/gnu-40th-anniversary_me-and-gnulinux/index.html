@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Openbox/XFCE桌面中设置Wacom CTL-671 | SENLINOS ON THE WEB</title>
+	<title>GNU40周年-我与GNU/Linux | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
@@ -91,148 +91,124 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-04-29T00:09:52&#43;08:00">2018-04-29</time>
+	<time class="entry__meta-published meta-published" datetime="2023-10-29T10:32:28&#43;08:00">2023-10-29</time>
 	</div>
-				<center><h1 class="entry__title title-bottom">Openbox/XFCE桌面中设置Wacom CTL-671</h1></center>
+				<center><h1 class="entry__title title-bottom">GNU40周年-我与GNU/Linux</h1></center>
 				<div class="entry__content">
 
-<p><mark>2021-09-20 更新</mark>：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。</p>
+<p>1983年9月27日，麻省理工学院人工智能实验室的 <strong>理查德·斯托曼（Richard Stallman）</strong> 在新闻组宣布了雄心勃勃的GNU(Gnu&rsquo;s Not Unix)操作系统计划，这就是自由软件的开始，电脑用户对于「自由软件」可以自由使用、复制、修改、再发布软件。用户可以完全抛弃盗版软件～不需要那些商业版权的限制。今年2023年正是GNU自由软件40周年～欢呼 \^o^/</p>
 
-<p>在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wacom驱动：xserver-xorg-input-wacom，所以直接使用脚本就可以设置。</p>
+<p>在我最初使用电脑的时候就知道有「自由软件」的存在了，因为买电脑前我买了两本书加以了解。</p>
 
-<p><strong><a id="jump">Wacom CTL-671 板子的sh脚本参数</a>：</strong></p>
+<h5 id="一本是介绍电脑硬件与安装系统的书">一本是介绍电脑硬件与安装系统的书</h5>
 
-<pre><code>#!/bin/sh
-# Setup Wacom CTL-671
-# Author: SenlinOS
-# The script is free to use.
+<p>《新编电脑组装与维护》，书中开篇就提到了「Linux操作系统」，在书的末尾部分系统维护中还提到可以用Linux操作系统替换Windows操作系统。（最初国内大家习惯的称谓是Linux系统，相信很多人也不知道这是什么）GNU官方对于操作系统的称谓建议用全称：<strong>GNU/Linux</strong>，GNU自由软件与自由开源Linux内核一起组成了完整的操作系统。</p>
 
-xinput map-to-output &quot;Wacom Bamboo One M Pen stylus&quot; DVI-I-1
+<p>这本书是2004年11月出版，292页。看过这本书后，我对GNU/Linux操作系统产生了极大的兴趣。</p>
 
-xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Area 0 0 21648 12177
+<p><img src="/img/1698553175017.jpg" alt="img" /></p>
 
-xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 3 2
-xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
-</code></pre>
+<p>2005年5月11日我购买了电脑，电脑公司安装的系统是D版的WinXP，那时根本就没什么版权意识，买回来什么就用什么！</p>
 
-<p><mark>2023-10-20 更新</mark>：我现在使用Openbox窗口管理器了，所以「旋转板子180度」需要<a id="RH">添加一行代码</a>：</p>
+<p>2007年国产红旗Linux桌面版6.0发布。我去红旗Linux官网看到有盒装版出售，我还给红旗Linux公司打了电话，询问在图像制作方面这个系统可以胜任吗？接电话的是位女士，回答说：“有功能强大的图像处理软件GIMP”。</p>
 
-<pre><code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; rotate half
-</code></pre>
+<p><img src="/img/100319432177.jpg" alt="img" />
+<br />红旗Linux桌面版6.0</p>
 
-<hr />
+<p>因为只是想先体验下，我并没有买盒装版，而是在红旗Linux官网下载了光盘镜像（1张系统盘，1张工具盘）。第一次刻系统盘，两次都刻成了资料盘（浪费的4张CDR光盘），第三次才刻成了镜像启动盘！但红旗6的安装界面不能使用鼠标，我在这里学会了使用Tab键来移动输入符。。安装好系统后，马上启动GIMP，当时是GIMP2.2，铅笔的启动屏画面给人印象深刻。不过说实话一点也不好用～哈！</p>
 
-<p><strong>参数解析：</strong></p>
+<p><img src="/img/gimp-splash.png" alt="img" />
+<br />GIMP 2.2 - Splash Author: Bill Luhtala</p>
 
-<ul>
-<li>获得Wacom数位板设备的名称，在终端执行命令：<code>xsetwacom list</code>
-<br />我们可以看到 Wacom CTL-671 的设备的名称：<code>Wacom Bamboo One M Pen stylus</code>
-<br />(当然你还会看到一个橡皮擦eraser的名称，但671没有笔尾橡皮，所以不去管它)</li>
-</ul>
+<p>这样我就拥有了D版的Win与自由开源的Linux双系统，红旗6当时使用的是KDE桌面环境，在我体验时KDE时常崩溃，然后自动再出现，所以KDE给我留下了很不好的印象！红旗Linux系统只是体验，使用还是以Win系统为主。</p>
 
-<p><p></p>
+<p>那时国内搞Linux系统还不少，华镭通用操作系统RAYS 2.0 当时的评价不错，我就安装了华镭2.0，体验直接升级，比红旗6运行的要快些，GNOME2桌面环境很稳定流畅。自此我在使用GNU/Linux方面完全倾向于DEB、GTK系。</p>
 
-<ul>
-<li>获得显示器的名称，在终端执行命令：<code>xrandr</code>
-<br />可以看到显示器的名称、分辨率与尺寸。我这里名称是：<code>DVI-I-1</code>，你的显示器名称也许会不同。</li>
-</ul>
+<p><img src="/img/1337584748261.jpg" alt="img" />
+<br />华镭通用操作系统RAYS 2.0</p>
 
-<p>我的脚本的第<strong>1</strong>条命令就是将 Wacom CTL-671 映射到显示器：<strong><code>xinput map-to-output &quot;Wacom Bamboo One M Pen stylus&quot; DVI-I-1</code></strong> ，其中 <strong>Wacom Bamboo One M Pen stylus</strong> 与 <strong>DVI-I-1</strong> 就是我们上面得到过的参数。</p>
-
-<p><p></p>
-
-<ul>
-<li>获取Wacom CTL-671的板面范围，在终端执行命令：<code>xinput list-props &quot;Wacom Bamboo One M Pen stylus&quot;</code>
-<br />列出的参数中找到 <code>Wacom Tablet Area (293)</code> 数值为：<code>0, 0, 21648, 13530</code>，就是板子的范围。</li>
-</ul>
-
-<p>我的显示器分辨率是：1920 x 1080，所以要让数位板的范围匹配显示器的比例。使用 GIMP 的“缩放图像”可以方便的计算。
-<br />可以在 GIMP 中新建个 1920 x 1080 的文件，在菜单图像 -&gt; 缩放图像 面板中 (单位是像素px)，
-把 1920 改成板子的 x 坐标数值：<code>21648</code>，这样就算出了对应显示器比例的 y 坐标数值：<code>12177</code></p>
-
-<p><img src="/img/xy16-9.png"/></p>
-
-<p>我的脚本的第<strong>2</strong>条命令就是将 Wacom CTL-671 的板面范围与显示器的比例相匹配：<strong><code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Area 0 0 21648 12177</code></strong> ，这样绘画时才会点对点，不会出现别捏的绘画感觉。</p>
-
-<p>我的脚本的第<strong>3</strong>条命令是设置压感笔上的侧键：
-    <br /><strong><code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 3 2</code></strong>
-    <br /><strong><code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3</code></strong></p>
-
-<p><code>Button 3</code> 是上侧键，<code>Button 2</code> 是下侧键。(我在脚本中也是上下排列它们的位置，所以很好识别)
-<br/>后面的数值<code>2</code> 代表 <strong>中键</strong> ，<code>3</code> 代表 <strong>右键</strong></p>
-
-<p>在下面的小贴士中，我列出了 <code>Button 2</code> 下侧键的其他设置方式，当然也可以设置 <code>Button 3</code> 上侧键：
-<div id="tips" class="tips-img">
-<p>
-<code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 button 0  #禁用</code>
-<p>
-<code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 &quot;key ctrl button 1&quot;  #Ctrl+左键=GIMP中的吸色</code>
-<p>
-<code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 &quot;key f&quot;  #F键</code>
-<p>
-<code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 &quot;key shift t&quot;  #组合键 Shift+T</code>
-<p>
-<code>xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 &quot;key shift ctrl d&quot;  #组合键 Shift+Ctrl+D</code>
-</div><p></p>
-
-<ul>
-<li>如果想将数位板旋转180度。「Openbox窗口管理器需要手动添加一行代码，<a href="#RH">看这里</a>」
-<br />这里我没有使用脚本命令，而是使用Xubuntu系统设置中的<strong>鼠标和触摸板</strong>
-<br />菜单设置管理器 -&gt; 鼠标和触摸板 -&gt; 设备选项卡，设备选项中选择：<strong>Wacom Bamboo One M Pen stylus</strong>
-<br />然后选择：<strong>平板</strong> 选项，在 <strong>旋转</strong> 中就可以设置，非常方便。</li>
-</ul>
-
-<p><img src="/img/wacomtablet-rotation.png"/></p>
-
-<p>新建个空白文件，把已经写好的<a href="#jump">脚本参数</a>复制进去，命名为 Wacom671.sh 保存。
- <br/>右键 Wacom671.sh 打开 [文件属性]，[权限]中选择任何人可以执行 (允许此文件作为程序运行)。</p>
+<p>当时在漫画QQ群里，我有说到在试用国产的Linux系统，并且在Win系统中也在试用自由软件GIMP，这时一位叫K的群友推荐我使用国际主流的Linux系统：Ubuntu。因为当时华镭2.0体验的很好，我也没直接接受K的建议，但就在这之后华镭宣布不再开发Linux系统了！我就安装了Ubuntu，天啊！果然是国际主流，运行的比华镭2.0更快。不过即使是国际主流的Ubuntu，在当时也不能驱动Wacom数位版。</p>
 
 <hr />
 
-<p><mark>2023-04-22 更新</mark></p>
+<h5 id="再一本是photoshop的入门书">再一本是Photoshop的入门书</h5>
 
-<p>我有体验使用其他的数位板，再用Wacom CTL-671时感觉有些飘，但我发现还是在<strong>设备选项卡</strong>中设置可以消除这样的感觉。</p>
+<p>《Photoshop CS 中文版教程》，这本书是2004年3月出版，270页，详细介绍了PS的功能与操作。当时电视教育频道有播出PS的入门视频，所以对PS相当仰慕。但电视节目播放过后就再看不到了，所以才买了这本PS的入门书。因为看了这本书让我充分了解了图像软件的操作方式，所以在使用GIMP时也毫无阻碍，软件的使用方式都是大同小异。</p>
 
-<ul>
-<li>还是在<strong>「设备」</strong>选项中选择：<strong>Wacom Bamboo One M Pen stylus</strong></li>
-<li>在 <strong>按钮和反馈</strong> 选项卡中，把 <strong>光标速度</strong> 中的<strong>「加速」</strong>与<strong>「灵敏度」</strong>的参数都调到最低</li>
-</ul>
+<p><img src="/img/1698553174862.jpg" alt="img" /></p>
 
-<p><img src="/img/wacomtablet-671.png"/></p>
-
-<p>这样再配合绘画软件中的手抖修正的功能进行线条绘制～手感就会非常好，我使用AzPainter-V3勾线</p>
+<p>一边使用D版的WinXP系统，一边习惯使用自由软件，期待有一天可以完全使用GNU/Linux体系来创作艺术作品。</p>
 
 <hr />
 
-<h4 id="xubuntu系统或xfce桌面环境中的自启动设置">Xubuntu系统或XFCE桌面环境中的自启动设置：</h4>
+<p>2007-2015年（2015年后软件改版为CSP）在电脑漫画制作方面最流行的软件是：ComicStudio（简称CS）。我当时非常痴迷依赖这个软件，认为它是无可替代的，那时就热衷于在网络上发布些小教程（CS的）。不过我联系到的漫画制作的作者习惯使用PS，这种情况改变了我对于ComicStudio这个软件的依赖。</p>
 
-<ul>
-<li>打开Xfce的设置管理器 -&gt; 会话和启动
+<p>在2010年的时候，友基科技UGEE的编辑联系到我，因为她在网络上看到我写的ComicStudio小教程很实用，所以想让我写一个CS新手入门教程，我这时已经有了版权意识，所以写这个CS教程时用的软件是ComicStudio官方试用版+汉化补丁。我以前使用的名字是：青春森林，后来使用GNU/Linux体系时就用了新名字：森林OS（SenlinOS），这个教程现在还能在友基科技UGEE的官网找到（网页上显示的是2016年，其实是网站改版后再发布时留下的时间）：
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/309.html">CS教程1</a>、
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/310.html">CS教程2</a>、
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/311.html">CS教程3</a>、
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/312.html">CS教程4</a>、
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/313.html">CS教程5</a>、
+<a rel="noopener noreferrer" target="_blank" href="https://www.ugee.com.cn/article/314.html">CS教程6</a>。</p>
 
-<ul>
-<li>Openbox窗口管理器需要在自启动文件<code>~/.config/openbox/autostart.sh</code>中加入一行代码来运行这个.sh脚本。
-详细内容看<a href="/post/my-openbox-setting/">这里～</a></li>
-</ul></li>
-</ul>
+<p>这个ComicStudio入门教程完成后，我更多的时间在使用Ubuntu系统，几乎不再使用Win系统（还是双系统）。时间也让GNU/Linux体系变得更加实用，GNU/Linux也已经支持Wacom数位版的驱动与设置。我使用自由软件也能制作漫画，但这个体系不是主流，也没有编辑再联系我写教程了。。</p>
 
-<p><img src="/img/xfce-seting.jpg"/></p>
+<p>2017年我建立了自己的个人主页，也就是在这一年GNU/Linux体系在数码绘画方面已经完全可以胜任了。</p>
 
-<ul>
-<li>在<code>应用程序自启动</code>选项中点击<code>添加</code>按钮，填写上<code>名称</code>，<code>命令</code>栏中开打刚刚写好的 Wacom671.sh 文件</li>
-</ul>
+<p>2018年我为自由软件GIMP制作了<a href="/post/mypaint-brushes-for-gimp-2.10-by_senlinos/">MyPaintBrushes-GIMP画笔集（SLOS_MPB ）</a> ，并以CC0公共领域许可证发布，因为在GIMP中默认的MyPaint画笔的排序与分类是混乱的，我制作的MyPaint画笔是有序排列的。（今年2023年5月9日 OpenToonz V1.7发布，我制作的这套画笔被OpenToonz官方采用）</p>
 
-<p><img src="/img/add-wacom.png"/></p>
+<p>2019年初，我已经习惯使用GNU/Linux体系了，所以把用不到的Win系统删除了，Ubuntu系统成了主机中唯一的电脑操作系统。</p>
 
-<ul>
-<li>点击确定，注销再登录系统，板子即可使用。</li>
-</ul>
+<p>2020年我为自由软件GIMP制作了<a href="/post/slos-gimpainter-released/">SLOS-GIMPainter画笔集</a>，GIMP 是功能强大的图像处理自由软件，但对于当时的GIMP来说没有一套专业的画笔。如果想用GIMP绘画的用户必须自己去制作画笔，从而造成不便与浪费时间，GIMP是我主要使用的图像软件，所以我就制作了这套画笔集。</p>
+
+<p><img src="/img/SLOS-GIMPainter-By-SenlinOS.jpg" alt="img" />
+<br />SLOS-GIMPainter画笔集</p>
+
+<hr />
+
+<p>时间可以改变很多，但一些事物也不会因时间而改变。我还是热衷于在网络上发布些自由软件的小教程，多数是视频形式的，Blender这个自由开源的3D软件在我这里更多的是用来剪辑视频。可以在
+<a rel="noopener noreferrer" target="_blank" href="https://space.bilibili.com/14824534">我的B站</a>
+看到这些视频教程。</p>
+
+<p>我在早先的一些GNU/Linux系统的截图中注意到一枚复古风格的GNU头像图标。我想搜索到这枚图标。</p>
+
+<p><img src="/img/2023-10-23_10-30-46.jpg" alt="img" /></p>
+
+<p>但我只能找到一枚48x48的JPG格式的GNU头像图标，我把它修改成了PNG格式，制作了一个图标放在程序启动器中「1983-GNU」。</p>
+
+<p>我用Blender剪辑了视频，虽然9月27日已经过去了，不过在10月24日程序员节这天发布视频也可以庆祝，都是年内～哈，我在程序启动器的首位展示「1983-GNU」这个图标，以这种方式庆祝GNU自由软件40周年。</p>
+
+<p>B站视频：<a rel="noopener noreferrer" target="_blank" href="https://www.bilibili.com/video/BV1NG41117yx">庆祝GNU40周年 Celebrate 40 years of GNU</a>
+<br />YTB Video: <a rel="noopener noreferrer" target="_blank" href="https://youtu.be/SNrfQ-jY1uY">Celebrate 40 years of GNU by SenlinOS</a></p>
+
+<p><img src="/img/celluloid-shot0001.jpg" alt="img" /></p>
+
+<p>视频发布后，我发现这个「1983-GNU」启动器的图标放大了会模糊，毕竟只是把48x48的PNG图片放到了SVG矩形的上面，并不是真正的矢量SVG图片！这种程度我自己无法接受，所以我使用Inkscape绘制了一枚真正的SVG文件：<a rel="noopener noreferrer" target="_blank" href="https://github.com/SenlinOS/databox/tree/master/GnuHeadWalsh">1983-GNU_CCby-SenlinOS.svg</a>
+，已经推送到了我的代码库。</p>
+
+<p><img src="/img/2023-10-29_22-00-03.jpg" alt="img" /></p>
+
+<p><img src="/img/2023-10-29_21-56-09.jpg" alt="img" /></p>
+
+<hr />
+
+<p>目前我使用的操作系统是GNU官方推荐的 <strong>Trisquel GNU/Linux</strong>，虽然Trisquel提倡的是100%的自由代码，不过我有安装N显卡的官方驱动（因为自由代码的显卡驱动，显卡风扇不转），算是做到99%的自由代码吧。<strong>SDDM</strong> 作为登录管理器，<strong>Openbox</strong> 作为桌面，非常简约的合作。</p>
+
+<p>Openbox虽然只是GNU/Linux的窗口管理器，但也可以单独使用，并且可以代替完整的桌面环境。它主要是使用快捷键与鼠标进行操作，快捷键也可以根据自己的习惯进行自定义。Openbox开机启动设置很稳定，运行速度快，不占用资源。</p>
+
+<p><img src="/img/2023-10-29_22-47-03.jpg" alt="img" /></p>
+
+<p>现在我完全使用GNU/Linux体系来进行数码绘画与漫画制作，我以前追求的<strong>「不使用盗版软件/系统进行绘画创作」</strong>的目标已经实现了 \^o^/ \^o^/ \^o^/</p>
+
+<h5 id="gnu-40th-anniversary-happy-birthday-gnu">GNU 40th anniversary, Happy birthday, GNU!</h5>
 </div>
 				
 				<footer class="entry__footer">
 					
 <div class="cctags">
 	<a class="entry__cc btn" rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ccimg" src="/img/cc-by-sa.svg" title="License: CC BY-SA 4.0" alt="cc-by-sa"/></a>
-			<a class="entry__tag btn" href="/tags/hardware-linux/">Hardware Linux</a>
+			<a class="entry__tag btn" href="/tags/brushes/">Brushes</a>
+			<a class="entry__tag btn" href="/tags/gimp/">Gimp</a>
 </div>
 				</footer>
 				
@@ -244,16 +220,16 @@ xsetwacom set &quot;Wacom Bamboo One M Pen stylus&quot; Button 2 3
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/post/modify-delux-t9-keyboard-mapping/">
+              <a href="/post/linuxwacom-ctl671-settings/">
                 <span class="button__icon">⬅</span>
-                <span class="button__text">在GNU/Linux中修改T9键盘映射</span>
+                <span class="button__text">Openbox/XFCE桌面中设置Wacom CTL-671</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/post/gnu-40th-anniversary_me-and-gnulinux/">
-                <span class="button__text">GNU40周年-我与GNU/Linux</span>
+              <a href="/post/change-mouse-side-button-to-middle-button/">
+                <span class="button__text">在GNU/Linux系统中将鼠标侧键改为中键</span>
                 <span class="button__icon">➡</span>
               </a>
             </span>
