@@ -4,38 +4,13 @@
    height="31"
    version="1"
    id="svg5"
-   sodipodi:docname="pkey.svg"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="12.700192"
-     inkscape:cx="25.511425"
-     inkscape:cy="14.999773"
-     inkscape:window-width="1418"
-     inkscape:window-height="1078"
-     inkscape:window-x="500"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg5"
-     showguides="true" />
   <defs
      id="defs5" />
   <g
      id="g8"
-     inkscape:label="g1"
-     transform="translate(0,-1)"
-     sodipodi:insensitive="true">
+     transform="translate(0,-1)">
     <path
        id="path6"
        style="display:inline;opacity:1;fill:#4caf50;fill-opacity:1;stroke-width:1.26469"
@@ -43,12 +18,10 @@
     <path
        id="rect6"
        style="display:inline;fill:#4caf50;fill-opacity:1;stroke-width:1.037"
-       d="M 1.5808191,9.9246515 H 28.125634 V 20.075348 h -7.54796 v -1.881584 h -2.84934 l -1.60289,-1.259757 -1.60289,1.259757 -1.888807,-1.56745 -1.888808,1.56745 L 8.8749603,15.836209 7.0049817,18.193764 5.6099994,16.934007 4.2150171,18.193764 0,14.093557 v -2.794839 z"
-       sodipodi:nodetypes="ccccccccccccccccc" />
+       d="M 1.5808191,9.9246515 H 28.125634 V 20.075348 h -7.54796 v -1.881584 h -2.84934 l -1.60289,-1.259757 -1.60289,1.259757 -1.888807,-1.56745 -1.888808,1.56745 L 8.8749603,15.836209 7.0049817,18.193764 5.6099994,16.934007 4.2150171,18.193764 0,14.093557 v -2.794839 z" />
     <path
        id="rect7"
        style="display:inline;opacity:0.2;fill:#000000;fill-opacity:1"
-       d="m 0,11.772309 v 1.847657 h 23.292498 c 0.483886,0 0.875,-0.389161 0.875,-0.873047 v -0.101563 c 0,-0.483886 -0.391114,-0.873047 -0.875,-0.873047 z"
-       sodipodi:nodetypes="ccssssc" />
+       d="m 0,11.772309 v 1.847657 h 23.292498 c 0.483886,0 0.875,-0.389161 0.875,-0.873047 v -0.101563 c 0,-0.483886 -0.391114,-0.873047 -0.875,-0.873047 z" />
   </g>
 </svg>
