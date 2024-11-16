@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GIMP焦点自动返回到画布窗口 | SENLINOS ON THE WEB</title>
+	<title>使用SED指令将字幕文件变成单行文本 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
@@ -93,59 +93,112 @@
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-11-11T09:25:27&#43;08:00">2018-11-11</time>
+	<time class="entry__meta-published meta-published" datetime="2023-12-05T10:36:29&#43;08:00">2023-12-05</time>
 	</div>
-				<center><h1 class="entry__title title-bottom">GIMP焦点自动返回到画布窗口</h1></center>
-				<div class="entry__content"><p><mark>2019-10-09 更新，原来有四个设置，现在两个设置就可以。</mark></p>
+				<center><h1 class="entry__title title-bottom">使用SED指令将字幕文件变成单行文本</h1></center>
+				<div class="entry__content"><p>我需要将一些字幕文件变成单行的文本，在GNU/Linux系统中完成这样的操作非常容易。我们不需要安装特定的软件，我将使用 <strong>SED</strong> 指令进行三十几个字幕文本的批处理操作，现在先让我们看看单独的命令：</p>
 
-<p>直到 GIMP 2.10.x
-单击其他对话框的选项后，画布窗口会失去焦点。
-此时按下空格键相关快捷键将不起作用。</p>
+<ol>
+<li><p>字幕文件的时间轴是以 <strong>00</strong> 开头，用命令删除所有00开头的行。<strong>-i</strong> 是执行修改后保存文件，所以在操作之前最好将字幕文件备份， <strong>*</strong> 代表全部文件，这样就可以进行批处理，不需要单独的输入字幕文件名：</p>
 
-<p>解决方案：1. 点击画布窗口。2. 按 <kbd>Esc</kbd>。
-<br/>这样会造成多余的操作，我想出来的这个方法可以自动将焦点返回到画布窗口 :)</p>
+<pre><code>sed -i '/^00/d' *
+</code></pre></li>
 
-<p><strong>必备条件：Xubuntu 系统 或 Xfce 桌面环境</strong></p>
+<li><p>字幕文件中有数字开头的序列行，用命令删除所有数字开头的行：</p>
 
-<ul>
-<li>如果你使用其他桌面环境，请找到窗口管理的类似功能。</li>
-</ul>
+<pre><code>sed -i '/^[0-9]/d' *
+</code></pre></li>
 
-<p><strong>第一步，Xfce 设置管理器</strong></p>
+<li><p>删除这些行后会产生空白行，用命令删除所有空白行：</p>
 
-<ul>
-<li><code>窗口管理器 -&gt; 焦点跟随鼠标</code></li>
-<li><del>面板 -&gt; 窗口按钮 -&gt; 窗口组：总是</del>（不再需要）</li>
-</ul>
+<pre><code>sed -i '/^$/d' *
+</code></pre></li>
+</ol>
 
-<p><img src="/img/xfce-settings.jpg"/></p>
+<p>在文件管理器中（我使用的是PCManFM）找到<strong>字幕的文件夹</strong>，然后用终端打开当前文件夹（快捷键F4，这样就不需要在终端中cd文件夹的路径，其他文件管理器也可以这样做）使用 <strong>&amp;&amp;</strong> 将以上三条命令连起来粘贴到终端中，按回车键执行后就成为了多行文本：</p>
 
-<p><strong>第二步，GIMP 设置</strong></p>
-
-<ul>
-<li><code>窗口 -&gt; 取消单窗口模式</code></li>
-<li><del>编辑 -&gt; 首选项，窗口管理 -&gt; 窗口管理器提示：普通窗口</del>（不再需要）（默认：多用途窗口）</li>
-</ul>
-
-<p><img src="/img/gimp-settings.jpg"/></p>
-
-<p>设置完成后，光标移回画布窗口，焦点将跟随。
-视频演示：
-<a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av35717157">&gt; 重重点击</a></p>
+<pre><code>sed -i '/^00/d' * &amp;&amp; sed -i '/^[0-9]/d' * &amp;&amp; sed -i '/^$/d' *
+</code></pre>
 
 <hr />
 
-<p><strong>English Notes:</strong> <a href="https://gitlab.gnome.org/GNOME/gimp/-/issues/2472">https://gitlab.gnome.org/GNOME/gimp/-/issues/2472</a></p>
+<ol>
+<li><p>如果字幕文件中有html代码，比如说明文字与网址或<i></i>斜体代码，例子如下：</p>
 
-<p><strong>YTB Video:</strong>
-<a target="_blank" rel="nofollow" href="https://youtu.be/dqL1dgGNdWM"><strong>&gt; Click!Click!</strong></a></p>
+<pre><code>字幕制作：
+-♪ &lt;font color=&quot;green&quot;&gt;时间轴&lt;/font&gt;-&lt;font color=&quot;red&quot;&gt;制作&lt;/font&gt;-&lt;font color=&quot;yellow&quot;&gt;俱乐部&lt;/font&gt; ♪-
+为你们奉献最好的字幕
+https://www.example.com
+</code></pre>
+
+<p>这样的四行多余的文字，可以删除 <strong>字幕制作：</strong>这行及其后3行，命令为：</p>
+
+<pre><code>sed -i '/字幕制作：/,+3d' *
+</code></pre></li>
+
+<li><p>用命令删除斜体代码 <code>&lt;i&gt;</code>，去掉 <code>&lt;i&gt;</code> 很容易，&rsquo;s/<strong>填写到这里</strong>//g&rsquo; 就可以了：</p>
+
+<pre><code>sed -i 's/&lt;i&gt;//g' *
+</code></pre></li>
+
+<li><p>去掉 <code>&lt;/i&gt;</code> 我们需要把其中的 <code>/</code> 转换下样式（因为<code>/</code>在sed指令中会用到，不转换命令就不正确了）用捺撇 <code>\/</code> 代替 <code>/</code> 就可以了，这样的命令还需要用双引号 <code>&quot;s/&lt;\/i&gt;//g&quot;</code> 命令：</p>
+
+<pre><code>sed -i &quot;s/&lt;\/i&gt;//g&quot; *
+</code></pre></li>
+</ol>
+
+<p>使用 <strong>&amp;&amp;</strong> 将以上三条命令连起来粘贴到终端中，按回车键执行后删除多余的文字与代码：</p>
+
+<pre><code>sed -i '/字幕制作：/,+3d' * &amp;&amp; sed -i 's/&lt;i&gt;//g' * &amp;&amp; sed -i &quot;s/&lt;\/i&gt;//g&quot; *
+</code></pre>
+
+<hr />
+
+<ol>
+<li><p>如果不需要变成单行，多行文本现在就已经完成了。我是需要用到单行文本，所以继续～现在为多行文本行尾添加逗号：</p>
+
+<pre><code>sed -i 's/$/，/g' *
+</code></pre></li>
+
+<li><p>然后将多行变为单行：</p>
+
+<pre><code>sed -i &quot;:a;N;s/\\n//g;ta&quot; *
+</code></pre></li>
+
+<li><p>现在已经变成单行文本了，但在行尾是逗号标点，所以替换行尾最后一个字符为句号：</p>
+
+<pre><code>sed -i 's/.$/。/' *
+</code></pre></li>
+</ol>
+
+<p>完成。使用 <strong>&amp;&amp;</strong> 将以上三条命令连起来粘贴到终端中，按回车键执行后所有的字幕文件就都变成了单行文本。使用文本编辑器可以打开查看这些文件（我使用Geany做为我的文本编辑器）：</p>
+
+<pre><code>sed -i 's/$/，/g' * &amp;&amp; sed -i &quot;:a;N;s/\\n//g;ta&quot; * &amp;&amp; sed -i 's/.$/。/' *
+</code></pre>
+
+<hr />
+
+<p>解释起来需要些文字说明，但执行时这些命令就非常快速，在GNU/Linux系统中也许这些命令不是专门为<strong>编辑字幕文件</strong>特定的，不过我们可以灵活运用这些命令。</p>
+
+<p><strong>附加：</strong>
+如果变成单行的文本行尾有特殊字符，比如 <strong>:)</strong> 这样的微笑字符，那么经过上面的操作会形成这样的字符 <strong>空格:)。</strong>所以可以使用之前的命令把它都替换成句号：</p>
+
+<pre><code>sed -i 's/ :)。$/。/' *
+</code></pre>
+
+<p>英文多行文本保存到一个文档中，比如文档名称为 <strong>aline</strong> ，变成单行文本的命令为：</p>
+
+<pre><code>sed -i 's/$/ /g' aline &amp;&amp; sed -i &quot;:a;N;s/\\n//g;ta&quot; aline
+</code></pre>
+
+<p>感谢观看 :)</p>
 </div>
 				
 				<footer class="entry__footer">
 					
 <div class="cctags">
 	<a class="entry__cc btn" rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ccimg" src="/img/cc-by-sa.svg" title="License: CC BY-SA 4.0" alt="cc-by-sa"/></a>
-			<a class="entry__tag btn" href="/tags/gimp/">Gimp</a>
+			<a class="entry__tag btn" href="/tags/freesoftware/">Freesoftware</a>
 </div>
 				</footer>
 				
@@ -157,16 +210,16 @@
         <div class="pagination__buttons">
           
             <span class="button previous">
-              <a href="/post/xubuntu-uefi-grub/">
+              <a href="/post/linuxwacom-ctl671-settings/">
                 <span class="button__icon">⬅</span>
-                <span class="button__text">解决安装GNU/Linux系统时GRUB安装失败</span>
+                <span class="button__text">Openbox/XFCE桌面中设置Wacom CTL-671</span>
               </a>
             </span>
           
           
             <span class="button next">
-              <a href="/post/chromium-keyrings-and-usb-soundcard/">
-                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
+              <a href="/post/gnu-40th-anniversary_me-and-gnulinux/">
+                <span class="button__text">GNU40周年-我与GNU/Linux</span>
                 <span class="button__icon">➡</span>
               </a>
             </span>

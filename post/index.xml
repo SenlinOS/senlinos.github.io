@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>使用SED指令将字幕文件变成单行文本</title>
+      <link>/post/sed-subtitle-file-to-single-line/</link>
+      <pubDate>Tue, 05 Dec 2023 10:36:29 +0800</pubDate>
+      
+      <guid>/post/sed-subtitle-file-to-single-line/</guid>
+      <description>我需要将一些字幕文件变成单行的文本，在GNU/Linux系统中完成这样的操作非常容易。我们不需要安装特定的软件，我将使用 SED 指令进行三十几个字</description>
+    </item>
+    
+    <item>
       <title>GNU40周年-我与GNU/Linux</title>
       <link>/post/gnu-40th-anniversary_me-and-gnulinux/</link>
       <pubDate>Sun, 29 Oct 2023 10:32:28 +0800</pubDate>

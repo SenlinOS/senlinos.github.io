@@ -1376,6 +1376,10 @@ button .main-nav__btn-box:hover{
 	text-align: center;
 }
 
+.s-text {
+	margin-top: 0.3em;
+}
+
 .afdimg {
 	width: 260px;
 	height: 73px;

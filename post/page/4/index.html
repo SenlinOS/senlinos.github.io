@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GIMP焦点自动返回到画布窗口 | SENLINOS ON THE WEB</title>
+	<title>博客 | SENLINOS ON THE WEB</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="Comics Art, Drawing and Painting with GNU/Linux.">
 	<link rel="stylesheet" href="/css/main1.css">
 	<link rel="stylesheet" href="/css/fancybox.css">
 	<link rel="stylesheet" href="/css/themes/mysite.css">
 	<link rel="icon" href="/img/logo.png" type="image/png">
-		
+	<link rel="alternate" type="application/rss+xml" href="/post/index.xml" title="SENLINOS ON THE WEB">
+
 </head>
 <body>
 	<header class="header">
 	<a class="logo logoh" href="/"><img class="wlogo" src="/img/senlinos-website-logo.svg"/> SENLINOS</a><a id="jcomm"></a>
-	
+
         <div id="main1">
 
 <div style="float:left" onclick="document.all.child1.style.display=(document.all.child1.style.display =='none')?'':'none'" >
@@ -42,30 +43,30 @@
 	<ul id="menu" class="main-nav__list">
 			<li class="main-nav__item">
 				<a class="main-nav__link" href="/">
-					
+
 					<span class="main-nav__text">首页</span>
-					
+
 				</a>
 			</li>
 			<li class="main-nav__item">
 				<a class="main-nav__link" href="/comics/">
-					
+
 					<span class="main-nav__text">漫画</span>
-					
+
 				</a>
 			</li>
-			<li class="main-nav__item">
-				<a class="main-nav__link" href="/post/">
-					
+			<li class="main-nav__item main-nav__item--active">
+
+
 					<span class="main-nav__text">博客</span>
-					
-				</a>
+
+
 			</li>
 			<li class="main-nav__item">
 				<a class="main-nav__link" href="/about/">
-					
+
 					<span class="main-nav__text">关于</span>
-					
+
 				</a>
 			</li>
 	</ul>
@@ -73,130 +74,58 @@
 
 </header>
 	<div class="primary">
-	
+
 	<main class="main">
-	<center><div id="child1" style="display:none">
+
+		<center><div id="child1" style="display:none">
 | <a href="/">中文</a> | <a href="/en/">English</a> |
 </div></center>
 
-	<center><div id="child2" style="display:none">
+		<center><div id="child2" style="display:none">
 <a href="https://senlinos.com"><img style="width: 35px; height: 19px;" alt="main" title="SenlinOS.com" src="/img/main.svg"/></a> | <a href="https://senlinos.github.io/">GitHub Pages</a> | <a href="https://senlinos.gitlab.io/">GitLab Pages</a>
 </div></center>
 
-	<center><div class="sponsor" id="child3" style="display:none">
+		<center><div class="sponsor" id="child3" style="display:none">
 <div class="img-group"><a rel="noopener noreferrer" target="_blank" href="https://afdian.com/a/senlinos"><img class="afdimg" alt="afdian" title="爱发电" src="/img/my-aifadian.png" /></a><div class="img-tip">afdian.com/a/senlinos</div></div>
 <div class="img-group"><a rel="noopener noreferrer" target="_blank" href="https://app.unifans.io/c/senlinos"><img class="afdimg" alt="unifans" title="Unifans" src="/img/my-unifans.png" /></a><div class="img-tip">app.unifans.io/c/senlinos</div></div>
 <div class="s-text">你的支持是我的动力 ✦ Your Support is My Motivation</div>
 </div></center>
 
-		
-		<div class="single block">
-			<article class="entry">
-	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2018-11-11T09:25:27&#43;08:00">2018-11-11</time>
-	</div>
-				<center><h1 class="entry__title title-bottom">GIMP焦点自动返回到画布窗口</h1></center>
-				<div class="entry__content"><p><mark>2019-10-09 更新，原来有四个设置，现在两个设置就可以。</mark></p>
 
-<p>直到 GIMP 2.10.x
-单击其他对话框的选项后，画布窗口会失去焦点。
-此时按下空格键相关快捷键将不起作用。</p>
-
-<p>解决方案：1. 点击画布窗口。2. 按 <kbd>Esc</kbd>。
-<br/>这样会造成多余的操作，我想出来的这个方法可以自动将焦点返回到画布窗口 :)</p>
-
-<p><strong>必备条件：Xubuntu 系统 或 Xfce 桌面环境</strong></p>
-
-<ul>
-<li>如果你使用其他桌面环境，请找到窗口管理的类似功能。</li>
-</ul>
-
-<p><strong>第一步，Xfce 设置管理器</strong></p>
-
-<ul>
-<li><code>窗口管理器 -&gt; 焦点跟随鼠标</code></li>
-<li><del>面板 -&gt; 窗口按钮 -&gt; 窗口组：总是</del>（不再需要）</li>
-</ul>
-
-<p><img src="/img/xfce-settings.jpg"/></p>
-
-<p><strong>第二步，GIMP 设置</strong></p>
-
-<ul>
-<li><code>窗口 -&gt; 取消单窗口模式</code></li>
-<li><del>编辑 -&gt; 首选项，窗口管理 -&gt; 窗口管理器提示：普通窗口</del>（不再需要）（默认：多用途窗口）</li>
-</ul>
-
-<p><img src="/img/gimp-settings.jpg"/></p>
-
-<p>设置完成后，光标移回画布窗口，焦点将跟随。
-视频演示：
-<a target="_blank" rel="nofollow" href="https://www.bilibili.com/video/av35717157">&gt; 重重点击</a></p>
-
-<hr />
-
-<p><strong>English Notes:</strong> <a href="https://gitlab.gnome.org/GNOME/gimp/-/issues/2472">https://gitlab.gnome.org/GNOME/gimp/-/issues/2472</a></p>
-
-<p><strong>YTB Video:</strong>
-<a target="_blank" rel="nofollow" href="https://youtu.be/dqL1dgGNdWM"><strong>&gt; Click!Click!</strong></a></p>
-</div>
-				
-				<footer class="entry__footer">
-					
-<div class="cctags">
-	<a class="entry__cc btn" rel="noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img class="ccimg" src="/img/cc-by-sa.svg" title="License: CC BY-SA 4.0" alt="cc-by-sa"/></a>
-			<a class="entry__tag btn" href="/tags/gimp/">Gimp</a>
-</div>
-				</footer>
-				
-			</article>
+		<div id="rcomm1">
+		<center>
+		<a class="entry__tag combtn" href="/post/"><img src="/img/tags.svg"/> 全部标签</a>
+		<a class="entry__tag combtn" href="/tags/brushes/">画笔/Brushes</a>
+		<a class="entry__tag combtn" href="/tags/freesoftware/">自由软件/FreeSoftware</a>
+		<a class="entry__tag combtn" href="/tags/gimp/">GIMP</a>
+		<a class="entry__tag combtn" href="/tags/hardware-linux/">Linux用的硬件/Hardware-Linux</a>
+		<a class="entry__tag combtn" href="/tags/ubuntu/">Ubuntu</a>
+		</center>
 		</div>
 
-	
-      <div class="pagination">
-        <div class="pagination__buttons">
-          
-            <span class="button previous">
-              <a href="/post/xubuntu-uefi-grub/">
-                <span class="button__icon">⬅</span>
-                <span class="button__text">解决安装GNU/Linux系统时GRUB安装失败</span>
-              </a>
-            </span>
-          
-          
-            <span class="button next">
-              <a href="/post/chromium-keyrings-and-usb-soundcard/">
-                <span class="button__text">解决打开Chromium需要密码与USB声卡</span>
-                <span class="button__icon">➡</span>
-              </a>
-            </span>
-          
-        </div>
-    </div>
+		<div class="cards">
 
+				<div class="card card--1col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt">
 
-	
-<div class="authorbox block">
-	<div class="author">
-		<figure class="author__avatar">
-			<img class="author__img" alt="森林OS (SenlinOS) avatar" src="/img/author.jpg" height="90" width="90">
-		</figure>
-		<div class="author__body">
-			<div class="author__name">
-				森林OS (SenlinOS)
-			</div>
-			<div class="author__bio">Comics Art with GNU/Linux</div>
-		<div style="text-align: left;"><img style="border: 0px solid ; width: 209px; height: 20px;" alt="yuyu" src="/img/yuyu.png"/></div>
-		<div style="text-align: left;"><img style="border: 0px solid ; width: 209px; height: 20px;" alt="yuyu1" src="/img/yuyu1.png"/></div>
+      <a class="entry__title-link" href="/post/translated-chinese-simplified-interface-for-azpainter-2-linux/">翻译了 AzPainter 2 for Linux 的简体中文界面</a>
+</h1>
+	<div class="entry__content">AzPainter 2 for Linux 已经发布有些时间了，我一直在等待中文界面，但原来的翻译者似乎是终止翻译了！ 所以我决定翻译 AzPainter 2.x for Linux 的简体中文界面。 AzPainter 2 for Linux 默认是一体窗</div>
+</article>
+
+				</div>
+
 		</div>
-	</div>
+
+
+<div class="pagination block">
+				<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/3/">3</a>
+				<span class="pagination__item pagination__item--active" data-total="4">4</span>
 </div>
-
-	
-
-
-
-	<div class="page block">
+	        <div class="page block">
 			<div style="text-align: right;"><a href="#top" target="_self"><img style="border: 0px solid ; width: 32px; height: 32px;" alt="Up" title="Up" src="/img/up.svg"/></a></div>
 </div>
 	</main>
