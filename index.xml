@@ -17,7 +17,16 @@
       <pubDate>Tue, 23 Jun 2020 20:05:55 +0800</pubDate>
       
       <guid>/post/slos-gimpainter-released/</guid>
-      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2025-02-17 更新 优化：视频 删除工具预</description>
+      <description>SLOS-GIMPainter 项目地址：GitHub SLOS-GIMPainter 是为 GIMP 2.10.20 或更高版本的画笔包。 The English description is in the project. SLOS-GIMPainter 稳定版 总计：115个 = 107个画笔 + 8个工具 2025-03-18 更新 工具预设名称重新排序</description>
+    </item>
+    
+    <item>
+      <title>MyPaint-Brushes for GIMP 2.10/GIMP3</title>
+      <link>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</link>
+      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      
+      <guid>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</guid>
+      <description>2025-03-18 更新 因为在GIMP3中没有效果，所以改变了028_Blend和029_Smear的默认参数（也适用于GIMP2.10.x） 改进了033_G</description>
     </item>
     
     <item>
@@ -27,15 +36,6 @@
       
       <guid>/post/modify-delux-t9-keyboard-mapping/</guid>
       <description>2021-05-24 更新：删除了以前用的键位映射的方法，因为旧方法是改变系统设置，单手键盘与电脑键盘上的键位一同改变。 新方法是只改变指定硬件的键位，也就是只改</description>
-    </item>
-    
-    <item>
-      <title>Openbox/XFCE桌面中设置Wacom CTL-671</title>
-      <link>/post/linuxwacom-ctl671-settings/</link>
-      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
-      
-      <guid>/post/linuxwacom-ctl671-settings/</guid>
-      <description>2021-09-20 更新：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
     </item>
     
     <item>
@@ -237,12 +237,12 @@
     </item>
     
     <item>
-      <title>MyPaint-Brushes for GIMP 2.10</title>
-      <link>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</link>
-      <pubDate>Tue, 01 May 2018 11:35:37 +0800</pubDate>
+      <title>Openbox/XFCE桌面中设置Wacom CTL-671</title>
+      <link>/post/linuxwacom-ctl671-settings/</link>
+      <pubDate>Sun, 29 Apr 2018 00:09:52 +0800</pubDate>
       
-      <guid>/post/mypaint-brushes-for-gimp-2.10-by_senlinos/</guid>
-      <description>GIMP 2.10 发布，添加了数不清的新功能。 其中的一个功能是 GIMP 可以使用 MyPaint 的画笔，但我感觉载入的默认画笔的图标与顺序有些混乱。 所以我制作了 36个 MyPaint 画笔，这</description>
+      <guid>/post/linuxwacom-ctl671-settings/</guid>
+      <description>2021-09-20 更新：删除了以前使用的参考别人的脚本 (参数有些繁琐)，这次我自己写了个简洁的设置脚本。 在 Xubuntu GNU/Linux 系统（或XFCE桌面环境）中已经默认安装了Wa</description>
     </item>
     
     <item>
