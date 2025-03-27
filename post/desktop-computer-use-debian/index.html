@@ -130,7 +130,8 @@
 <li>添加更新源，在终端中使用命令：<code>sudo vi /etc/apt/sources.list</code> 打开更新源列表，按键盘 <kbd>G</kbd>、<kbd>o</kbd>，然后复制粘贴源：</li>
 </ul>
 
-<p><code>deb-src http://ftp.au.debian.org/debian/ buster main non-free contrib</code>，（要删除默认源 <code>deb http://ftp.au.debian.org/debian/ buster main</code> ），按键盘 <kbd>Esc</kbd>、<kbd>Shift+;</kbd>、<kbd>w</kbd>、<kbd>q</kbd>、<kbd>Enter</kbd> 完成操作。<br />（这些按键是Vi编辑器的操作方式）</p>
+<p><code>deb-src http://ftp.au.debian.org/debian/ buster main non-free contrib</code>，（要删除默认源 <code>deb http://ftp.au.debian.org/debian/ buster main</code> ），按键盘 <kbd>Esc</kbd>、<kbd>Shift+;</kbd>、<kbd>w</kbd>、<kbd>q</kbd>、<kbd>Enter</kbd> 完成操作。
+ <br />（这些按键是Vi编辑器的操作方式）</p>
 
 <ul>
 <li><p><code>sudo apt update</code></p></li>
@@ -168,6 +169,8 @@ xrandr --output DP-1 --rotate left
 <ul>
 <li>在终端使用命令 <code>sudo vi /usr/local/bin/rotate-screen.sh</code>，按键盘 <kbd>G</kbd>、<kbd>o</kbd>，然后复制粘贴下方的内容。</li>
 </ul>
+
+<p><p></p>
 
 <pre><code>#!/bin/bash
 xrandr --output DP-4 --rotate left
