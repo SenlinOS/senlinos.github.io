@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu on SENLINOS ON THE WEB</title>
-    <link>/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on SENLINOS ON THE WEB</description>
+    <title>Gnu Linux on SENLINOS ON THE WEB</title>
+    <link>/tags/gnu-linux/</link>
+    <description>Recent content in Gnu Linux on SENLINOS ON THE WEB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Oct 2021 19:23:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 08:29:35 +0800</lastBuildDate>
     
-	<atom:link href="/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/gnu-linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>台式电脑使用了Debian系统</title>
+      <link>/post/desktop-computer-use-debian/</link>
+      <pubDate>Thu, 27 Mar 2025 08:29:35 +0800</pubDate>
+      
+      <guid>/post/desktop-computer-use-debian/</guid>
+      <description>之前想升级GNU/Linux操作系统，但有的DEB系发行版安装完成后，重启就GRUB开机错误，根本无法使用，安装过程也是浪费时间！ 还好给笔记</description>
+    </item>
     
     <item>
       <title>Nvidia-340 驱动与内核不匹配，降级内核解决</title>
@@ -31,10 +40,10 @@
     
     <item>
       <title>Xubuntu-18.04、Blender中文界面</title>
-      <link>/post/lubuntu-18-04-blender-mcomix/</link>
+      <link>/post/xubuntu-18-04-blender/</link>
       <pubDate>Sat, 12 May 2018 17:54:16 +0800</pubDate>
       
-      <guid>/post/lubuntu-18-04-blender-mcomix/</guid>
+      <guid>/post/xubuntu-18-04-blender/</guid>
       <description>2018-05-16 更新系统到 Xubuntu 18.04 考虑到以后 Lubuntu 系统会转到 QT 版本，但我比较喜欢使用 GTK 的程序， 所以决定还是转到 Xubuntu，安装 新立得软件包管理器(Synapt</description>
     </item>
     
