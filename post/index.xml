@@ -39,15 +39,6 @@
     </item>
     
     <item>
-      <title>台式电脑使用了Debian系统</title>
-      <link>/post/desktop-computer-use-debian/</link>
-      <pubDate>Thu, 27 Mar 2025 08:29:35 +0800</pubDate>
-      
-      <guid>/post/desktop-computer-use-debian/</guid>
-      <description>之前想升级GNU/Linux操作系统，但有的DEB系发行版安装完成后，重启就GRUB开机错误，根本无法使用，安装过程也是浪费时间！ 还好给笔记</description>
-    </item>
-    
-    <item>
       <title>使用SED指令将字幕文件变成单行文本</title>
       <link>/post/sed-subtitle-file-to-single-line/</link>
       <pubDate>Tue, 05 Dec 2023 10:36:29 +0800</pubDate>
